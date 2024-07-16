@@ -30,5 +30,30 @@ This web-based application allows users to perform CRUD (Create, Read, Update, D
 
 Clone the forked repository to your local machine using the following command:
 
-```bash
-git clone https://github.com/yourusername/Register_form.git
+    ```bash
+     git clone https://github.com/yourusername/Register_form.git
+### 2. Import Project
+Import the project into your Java IDE (e.g., Eclipse, IntelliJ IDEA) after cloning it.
+
+### 3. Configure Database Connection
+Update the database connection details (jdbc:mysql://localhost:3306/Register_form, username, password) in the database.java file located in the src directory of the project.
+
+### 4. Run the Application
+Deploy on Apache Tomcat
+Deploy the project on the Apache Tomcat server from your IDE or manually copy the files to the Tomcat webapps directory.
+
+## Prerequisites
+Create a database and table to store user records.
+ ```sql
+CREATE DATABASE Register_form;
+
+USE Register_form;
+
+CREATE TABLE info (
+ ID INT AUTO_INCREMENT PRIMARY KEY,
+NAME NVARCHAR(40),
+ROLL_NO NVARCHAR(30),
+ADDRESS NVARCHAR(90),
+GENDER NVARCHAR(20)
+);
+
